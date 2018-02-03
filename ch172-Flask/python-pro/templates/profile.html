@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {# if username #}
+        <title>Profile of {{ username }}</title>
+        {# else #}
+        <title>No User Found</title>
+    <head>
+    <body>
+        {% if username %}
+            <h1>{{ username }} joined on the date {{ date }}</h1>
+        {% else %}
+            <h1>No user was found under that username</h1>
+        {% endif %}
+            {# This is a comment and doesn't affect the output #}
+    </body>
+</html>
