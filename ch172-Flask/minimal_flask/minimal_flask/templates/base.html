@@ -1,0 +1,49 @@
+{% extends "bootstrap/base.html"  %}
+{% block head %}
+  {{  super()  }}
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename = 'favicon.ico') }}"  type='image/x-icon'/>
+{% endblock %}
+
+{% block styles %}
+    {{  super()  }}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/gallery.css')}}">
+{% endblock %}
+
+<!-- 確保需要 jQuery 的 custome script 在 jQuery load 完以後 import -->
+{% block scripts %}
+    {{  super()  }}
+    <script src="{{url_for('static', filename='js/gallery.js')}}"></script>
+{% endblock %}
+
+
+<!-- app必備navbar -->
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Minimal Flask</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!-- 定義頁面最大的container, 之後每頁的內容都放在page_content裡頭.
+     content block是pre-defined keyword, page_content是自定義的 -->
+
+{% block content %}
+<div class="container">
+  {% block page_content %}{% endblock %}
+</div>
+{% endblock %}

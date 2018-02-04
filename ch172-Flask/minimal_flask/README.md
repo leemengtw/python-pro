@@ -48,3 +48,7 @@ flask run
 ## References
 - [Larger Applications](http://flask.pocoo.org/docs/0.12/patterns/packages/)
 
+## Resources
+- [BootstrapCDN](https://www.bootstrapcdn.com/)
+- [Bootsnipp - templates](https://bootsnipp.com/)
+- [faviconer](http://www.faviconer.com/icon/index)
