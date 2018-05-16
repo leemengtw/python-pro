@@ -23,6 +23,12 @@ minimal_flask
 - `app.py` import view module, e.g., `import minimal_flask.views`
 - `views.py` import app, e.g., `from minimal_flask import app`
 
+## Environment
+
+```commandline
+source activate flask
+```
+
 
 ## Package 設定
 環境變數

@@ -1,5 +1,10 @@
 # Python Notes for Professionals
 Jupyter notebooks and python scripts for learning Python.
-All the code in this repo is referencing wonderful 
-[Python® Notes for Professionals book](http://books.goalkicker.com/PythonBook/) and is 
-only for practicing purpose.
+
+
+## Environment
+Basically, all the notebooks / scripts are ran under Python3
+unless specified in individual REAME files.
+
+## References
+- [Python® Notes for Professionals book](http://books.goalkicker.com/PythonBook/)
